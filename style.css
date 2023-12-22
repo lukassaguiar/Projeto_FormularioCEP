@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --violet: #FC2947;
+    --laranja: #FE6244;
+    --azul: #1F4690;
+    --cinza: #716F81;  
+    --brancoCinza: #f0f8ff;  
+}
+
+.cabecalho {
+    background-color: var(--azul);
+    color: var(--brancoCinza);
+    text-align: center;
+    font-size: 16px;
+    padding: 8px;
+    font-weight: 300;
+    margin-bottom: 16px;
+    box-shadow: 4px 4px 4px var(--brancoCinza);
+}
+
+.cabecalho h1 {
+    font-weight: 400;
+}
+body {
+    font-family: "Space Grotesk", sans-serif;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+
+.formulario {
+    max-width: 900px;
+    margin: auto;
+    /* background-color: ; */
+    /*color: ;*/
+    padding: 24px;
+    border-radius: 16px;
+    gap: 24px;
+}
+.formulario fieldset {
+    border: none;
+    padding: 16px;
+    margin-top: 48px; 
+}
+
+.formulario legend {
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--violet);
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+} 
+.dupla {
+    width: 100%;
+    margin-bottom: 8px;
+}
+.dupla input, .dupla select {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 8px;
+    outline-color: var(--laranja);
+}
+.dupla label {
+    display: inline-block;
+    margin-bottom: 4px;
+    
+}
+.dupla select {
+    margin: auto;
+}
+
+.button {
+    text-align: right;
+    padding: 24px;
+}
+
+
+input[type=submit] {
+    padding: 16px;
+    width: 30%;
+    background-color: var(--laranja);
+    color: var(--brancoCinza);
+    font-size: 16px;
+    border: var(--laranja);
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 1px var(--cinza);
+}
+
+.button :hover{
+    background-color: var(--azul);
+    box-shadow: none;
+    transition: .5s;
+}
+
+.rodape {
+    background-color: var(--azul);
+    color: var(--brancoCinza);
+    text-align: center;
+    padding: 16px;
+}
+
+.rodape span {
+    font-size: 24px;
+    font-weight: 500;
+}
